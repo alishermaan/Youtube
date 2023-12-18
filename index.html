@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nleft">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg"
+          alt="Youtube.Png"
+        />
+      </div>
+      <div class="mid">
+        <input type="text" placeholder="Search" />
+        <img class="p3" 
+          src="data:image/png;base64,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"
+          alt=""
+        />
+      </div>
+      <div class="right">
+        <img class="p1"
+          src="https://www.shutterstock.com/image-vector/add-new-video-upload-movie-600w-1207013524.jpg"
+          alt=""
+        />
+        <img class="p1"
+          src="https://www.shutterstock.com/image-vector/red-round-web-button-bell-600nw-1516906868.jpg"
+          alt=""
+        />
+        <img class="p1"
+          src="https://www.pngfind.com/pngs/m/170-1700158_my-new-youtube-profile-icon-png-youtube-profile.png"
+          alt=""
+        />
+        <img class="poyoye" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9rxjFZO7V7TpBMOU3IXAcAz4eipgG5-JCeZQuPN-Xcw&s" alt="">
+      </div>
+    </div>
+    <div class="mid-content">
+      <div class="mleft">
+        <div class="div-con">
+          <div style="width: 30px; height: 30px; fill: currentcolor">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <g>
+                <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+              </g>
+            </svg>
+          </div>
+          <br />
+          <br />
+          <div style="width: 30px; height: 30px; fill: currentcolor">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path
+                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
+              ></path>
+            </svg>
+          </div>
+          <br />
+          <br />
+          <div style="width: 30px; height: 30px; fill: currentcolor">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path
+                d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"
+              ></path>
+            </svg>
+          </div>
+          <br />
+          <br />
+          <div style="width: 30px; height: 30px; fill: currentcolor">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path
+                d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="mright">
+        <div class="con1">
+        <div class="container1">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/ErrdN1c3hG4?si=IVTWdV2-7n1VwagT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="container1">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/CuS2c74B0YQ?si=oG8mw8B2yu0iKszo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="container1">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/crp7r96wkHk?si=cMY5ImvTWz6q8Ju5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+        <br>
+        <div class="con">
+        <div class="container2">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/3P26k4qjZOE?si=NYpMuu3zE-fU0OXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="container2">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/p3Ez5vWoX_E?si=_SQrWRAqwlZiO5z7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="container2">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/qLE1U_Rj1M0?si=JhUkS860Q-WzKytb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
